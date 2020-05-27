@@ -1,0 +1,36 @@
+{% extends 'restaurant/base.html' %}
+
+{% block page %}
+
+    <div class="panel">
+      <div class="panel-heading bg-blue">
+        <h4 class="panel-title text-center text-white">Products</h4>
+      </div>
+      <div class="panel-body">
+          <div class="text-right">
+              <a href="{% url 'restaurant-add-category' %}" class="btn btn-pink">Add Category</a>
+              <br/>
+              <br/>
+          </div>
+
+          <table class="table table-bordered table-hover table-striped">
+            <thead>
+              <tr class="bg-gray text-white">
+                <th>Id</th>
+                <th>Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for category in categories %}
+                <tr>
+                  <td scope="row">{{ category.id }}</td>
+                  <td><a href="{% url 'restaurant-edit-category' category.id %}">{{ category.name }}</a></td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+      </div>
+    </div>
+
+
+{% endblock %}

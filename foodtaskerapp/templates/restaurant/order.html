@@ -1,0 +1,73 @@
+{% extends 'restaurant/base.html' %} {% block page %}
+
+<script type='text/JavaScript' src='js/StarWebPrintBuilder.js'></script>
+<script type='text/JavaScript'>
+    function onBuild() { window.print(); }
+</script>
+
+<div class="panel">
+    <div class="panel-heading bg-blue">
+        <h4 class="panel-title text-center text-white">Orders</h4>
+    </div>
+    <div class="panel-body">
+        <div class="text-right">
+            <a href="{% url 'restaurant-add-order' %}" class="btn btn-pink">Add Order</a>
+            <br/>
+            <br/>
+        </div>
+    </div>
+
+    <table class="table table-bordered table-hover table-striped">
+        <thead>
+            <tr class="bg-gray text-white">
+                <th>Order ID</th>
+                <th>Order Details</th>
+                <th>Order Requirements</th>
+                <th>Customer</th>
+                <th>Driver</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if orders %} {% for order in orders %}
+
+            <tr>
+                <td scope="row">{{ order.id }}</td>
+                <td>
+                    {% for od in order.order_details.all %}
+                    <a href="{% url 'restaurant-edit-order_detail' od.id %}">{{ od.quantity }} x {{ od.meal.name }}</a>
+                    <br /> {% endfor %}
+
+                </td>
+                <td style="width: 25%">{{ order.extra_notes }}
+                </td>
+                <td>
+                    <a href="{% url 'restaurant-edit-customer_detail' order.customer_id %}">{{ order.customer }}</a>
+                    <br />
+                </td>
+                <td>{{ order.driver}}</td>
+                <td>{{ order.get_status_display }}</td>
+                <td>
+                    {% if order.status == 1 %}
+                    <form method="POST">
+                        {% csrf_token %}
+                        <input name="id" value="{{ order.id }}" hidden>
+                        <button class="btn btn-success">Ready</button>
+                    </form>
+                    {% endif %}
+                    <button class="" onClick="onBuild()">Print</button>
+                </td>
+            </tr>
+
+            {% endfor %} {% else %}
+            <tr>
+                <td colspan="6">No Orders are available</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    </table>
+</div>
+</div>
+
+{% endblock %}

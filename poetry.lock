@@ -1,0 +1,577 @@
+[[package]]
+category = "main"
+description = "Python package for providing Mozilla's CA Bundle."
+name = "certifi"
+optional = false
+python-versions = "*"
+version = "2017.4.17"
+
+[[package]]
+category = "main"
+description = "Universal encoding detector for Python 2 and 3"
+name = "chardet"
+optional = false
+python-versions = "*"
+version = "3.0.4"
+
+[[package]]
+category = "main"
+description = "XML bomb protection for Python stdlib modules"
+name = "defusedxml"
+optional = false
+python-versions = "*"
+version = "0.5.0"
+
+[[package]]
+category = "main"
+description = "Use Database URLs in your Django Application."
+name = "dj-database-url"
+optional = false
+python-versions = "*"
+version = "0.4.2"
+
+[[package]]
+category = "main"
+description = "A high-level Python Web framework that encourages rapid development and clean, pragmatic design."
+name = "django"
+optional = false
+python-versions = "*"
+version = "1.10"
+
+[package.extras]
+argon2 = ["argon2-cffi (>=16.1.0)"]
+bcrypt = ["bcrypt"]
+
+[[package]]
+category = "main"
+description = "Bootstrap support for Django projects"
+name = "django-bootstrap3"
+optional = false
+python-versions = "*"
+version = "7.0.1"
+
+[[package]]
+category = "main"
+description = "Reusable, generic mixins for Django"
+name = "django-braces"
+optional = false
+python-versions = "*"
+version = "1.10.0"
+
+[[package]]
+category = "main"
+description = "A file management application for django that makes handling of files and images a breeze."
+name = "django-filer"
+optional = false
+python-versions = "*"
+version = "0.8.7"
+
+[package.dependencies]
+django-mptt = ">=0.2.1"
+easy-thumbnails = "*"
+setuptools = "*"
+
+[[package]]
+category = "main"
+description = "script tag with additional attributes for django.forms.Media"
+name = "django-js-asset"
+optional = false
+python-versions = "*"
+version = "1.1.0"
+
+[[package]]
+category = "main"
+description = "Utilities for implementing Modified Preorder Tree Traversal with your Django Models and working with trees of Model instances."
+name = "django-mptt"
+optional = false
+python-versions = "*"
+version = "0.9.0"
+
+[package.dependencies]
+django-js-asset = "*"
+
+[[package]]
+category = "main"
+description = "OAuth2 goodies for Django"
+name = "django-oauth-toolkit"
+optional = false
+python-versions = "*"
+version = "0.11.0"
+
+[package.dependencies]
+django = ">=1.7"
+django-braces = ">=1.8.1"
+oauthlib = "1.1.2"
+six = "*"
+
+[[package]]
+category = "main"
+description = "Seamless Polymorphic Inheritance for Django Models"
+name = "django-polymorphic"
+optional = false
+python-versions = "*"
+version = "0.5.5"
+
+[package.dependencies]
+setuptools = "*"
+
+[[package]]
+category = "main"
+description = "python-social-auth and oauth2 support for django-rest-framework"
+name = "django-rest-framework-social-oauth2"
+optional = false
+python-versions = "*"
+version = "1.0.5"
+
+[package.dependencies]
+django-oauth-toolkit = ">=0.9.0"
+djangorestframework = ">=3.0.1"
+social-auth-app-django = ">=0.1.0"
+
+[[package]]
+category = "main"
+description = "Web APIs for Django, made easy."
+name = "djangorestframework"
+optional = false
+python-versions = "*"
+version = "3.4.3"
+
+[[package]]
+category = "main"
+description = "Easy thumbnails for Django"
+name = "easy-thumbnails"
+optional = false
+python-versions = "*"
+version = "2.5"
+
+[package.dependencies]
+django = ">=1.8"
+pillow = "*"
+
+[[package]]
+category = "main"
+description = "WSGI HTTP Server for UNIX"
+name = "gunicorn"
+optional = false
+python-versions = "*"
+version = "19.6.0"
+
+[[package]]
+category = "main"
+description = "Internationalized Domain Names in Applications (IDNA)"
+name = "idna"
+optional = false
+python-versions = "*"
+version = "2.5"
+
+[[package]]
+category = "main"
+description = "A generic, spec-compliant, thorough implementation of the OAuth request-signing logic"
+name = "oauthlib"
+optional = false
+python-versions = "*"
+version = "1.1.2"
+
+[package.extras]
+rsa = ["cryptography"]
+signals = ["blinker"]
+signedtoken = ["cryptography", "pyjwt (>=1.0.0)"]
+test = ["nose", "cryptography", "pyjwt (>=1.0.0)", "blinker"]
+
+[[package]]
+category = "main"
+description = "Python package to parse, read and write Microsoft OLE2 files (Structured Storage or Compound Document, Microsoft Office) - Improved version of the OleFileIO module from PIL, the Python Image Library."
+name = "olefile"
+optional = false
+python-versions = "*"
+version = "0.44"
+
+[[package]]
+category = "main"
+description = "Python Imaging Library (Fork)"
+name = "pillow"
+optional = false
+python-versions = ">=3.5"
+version = "7.0.0"
+
+[[package]]
+category = "main"
+description = "psycopg2 - Python-PostgreSQL Database Adapter"
+name = "psycopg2"
+optional = false
+python-versions = "*"
+version = "2.7.3.2"
+
+[[package]]
+category = "main"
+description = "JSON Web Token implementation in Python"
+name = "pyjwt"
+optional = false
+python-versions = "*"
+version = "1.5.0"
+
+[package.extras]
+crypto = ["cryptography (>=1.0)"]
+flake8 = ["flake8", "flake8-import-order", "pep8-naming"]
+test = ["pytest (>3,<4)", "pytest-cov", "pytest-runner"]
+
+[[package]]
+category = "main"
+description = "Python social authentication made simple."
+name = "python-social-auth"
+optional = false
+python-versions = "*"
+version = "0.3.6"
+
+[package.dependencies]
+social-auth-core = "*"
+
+[package.extras]
+cherrypy = ["social-auth-app-cherrypy"]
+django = ["social-auth-app-django"]
+django-mongoengine = ["social-auth-app-django-mongoengine"]
+flask = ["social-auth-app-flask-sqlalchemy", "social-auth-app-flask"]
+flask-mongoengine = ["social-auth-app-flask-mongoengine"]
+flask-peewee = ["social-auth-app-flask-peewee"]
+pyramid = ["social-auth-app-pyramid"]
+tornado = ["social-auth-app-tornado"]
+webpy = ["social-auth-app-webpy"]
+
+[[package]]
+category = "main"
+description = "OpenID support for modern servers and consumers."
+name = "python3-openid"
+optional = false
+python-versions = "*"
+version = "3.1.0"
+
+[package.dependencies]
+defusedxml = "*"
+
+[[package]]
+category = "main"
+description = "World timezone definitions, modern and historical"
+name = "pytz"
+optional = false
+python-versions = "*"
+version = "2016.6.1"
+
+[[package]]
+category = "main"
+description = "Python HTTP for Humans."
+name = "requests"
+optional = false
+python-versions = "*"
+version = "2.17.3"
+
+[package.dependencies]
+certifi = ">=2017.4.17"
+chardet = ">=3.0.2,<3.1.0"
+idna = ">=2.5,<2.6"
+urllib3 = ">=1.21.1,<1.22"
+
+[package.extras]
+security = ["cryptography (>=1.3.4)", "idna (>=2.0.0)", "pyOpenSSL (>=0.14)"]
+socks = ["PySocks (>=1.5.6,<1.5.7 || >1.5.7)", "win-inet-pton"]
+
+[[package]]
+category = "main"
+description = "OAuthlib authentication support for Requests."
+name = "requests-oauthlib"
+optional = false
+python-versions = "*"
+version = "0.8.0"
+
+[package.dependencies]
+oauthlib = ">=0.6.2"
+requests = ">=2.0.0"
+
+[package.extras]
+rsa = ["oauthlib (>=0.6.2)", "requests (>=2.0.0)"]
+
+[[package]]
+category = "main"
+description = "A generator library for concise, unambiguous and URL-safe UUIDs."
+name = "shortuuid"
+optional = false
+python-versions = "*"
+version = "0.5.0"
+
+[[package]]
+category = "main"
+description = "Python 2 and 3 compatibility utilities"
+name = "six"
+optional = false
+python-versions = "*"
+version = "1.10.0"
+
+[[package]]
+category = "main"
+description = "Python Social Authentication, Django integration."
+name = "social-auth-app-django"
+optional = false
+python-versions = "*"
+version = "1.1.0"
+
+[package.dependencies]
+six = "*"
+social-auth-core = ">=1.2.0"
+
+[[package]]
+category = "main"
+description = "Python social authentication made simple."
+name = "social-auth-core"
+optional = false
+python-versions = "*"
+version = "1.7.0"
+
+[package.dependencies]
+PyJWT = ">=1.4.0"
+oauthlib = ">=1.0.3"
+requests = ">=2.9.1"
+requests-oauthlib = ">=0.6.1"
+six = ">=1.10.0"
+
+[package.dependencies.defusedxml]
+python = ">=3.0"
+version = ">=0.5.0rc1"
+
+[package.dependencies.python3-openid]
+python = ">=3.0"
+version = ">=3.0.10"
+
+[package.extras]
+all = ["cryptography (>=2.1.1)", "pyjwkest (>=1.0.1)", "python-saml (>=2.2.0)", "python3-saml (>=1.2.1)"]
+azuread = ["cryptography (>=2.1.1)"]
+openidconnect = ["pyjwkest (>=1.0.1)"]
+saml = ["python-saml (>=2.2.0)", "python3-saml (>=1.2.1)"]
+
+[[package]]
+category = "main"
+description = "Stripe python bindings"
+name = "stripe"
+optional = false
+python-versions = "*"
+version = "1.37.0"
+
+[package.dependencies]
+requests = ">=0.8.8"
+
+[[package]]
+category = "main"
+description = "HTTP library with thread-safe connection pooling, file post, and more."
+name = "urllib3"
+optional = false
+python-versions = "*"
+version = "1.21.1"
+
+[package.extras]
+secure = ["pyOpenSSL (>=0.14)", "cryptography (>=1.3.4)", "idna (>=2.0.0)", "certifi", "ipaddress"]
+socks = ["PySocks (>=1.5.6,<1.5.7 || >1.5.7,<2.0)"]
+
+[[package]]
+category = "main"
+description = "Radically simplified static file serving for WSGI applications"
+name = "whitenoise"
+optional = false
+python-versions = "*"
+version = "3.2.1"
+
+[metadata]
+content-hash = "957278656aeaab3335beb495eb0117bcab1acea710d82f83bc6761da73d4b57c"
+python-versions = "^3.7"
+
+[metadata.files]
+certifi = [
+    {file = "certifi-2017.4.17-py2.py3-none-any.whl", hash = "sha256:f4318671072f030a33c7ca6acaef720ddd50ff124d1388e50c1bda4cbd6d7010"},
+    {file = "certifi-2017.4.17.tar.gz", hash = "sha256:f7527ebf7461582ce95f7a9e03dd141ce810d40590834f4ec20cddd54234c10a"},
+]
+chardet = [
+    {file = "chardet-3.0.4-py2.py3-none-any.whl", hash = "sha256:fc323ffcaeaed0e0a02bf4d117757b98aed530d9ed4531e3e15460124c106691"},
+    {file = "chardet-3.0.4.tar.gz", hash = "sha256:84ab92ed1c4d4f16916e05906b6b75a6c0fb5db821cc65e70cbd64a3e2a5eaae"},
+]
+defusedxml = [
+    {file = "defusedxml-0.5.0-py2.py3-none-any.whl", hash = "sha256:702a91ade2968a82beb0db1e0766a6a273f33d4616a6ce8cde475d8e09853b20"},
+    {file = "defusedxml-0.5.0.tar.gz", hash = "sha256:24d7f2f94f7f3cb6061acb215685e5125fbcdc40a857eff9de22518820b0a4f4"},
+]
+dj-database-url = [
+    {file = "dj-database-url-0.4.2.tar.gz", hash = "sha256:a6832d8445ee9d788c5baa48aef8130bf61fdc442f7d9a548424d25cd85c9f08"},
+    {file = "dj_database_url-0.4.2-py2.py3-none-any.whl", hash = "sha256:e16d94c382ea0564c48038fa7fe8d9c890ef1ab1a8ec4cb48e732c124b9482fd"},
+]
+django = [
+    {file = "Django-1.10-py2.py3-none-any.whl", hash = "sha256:9c60f4a801bf7c26bd6824c1062550c12c373344116703461c18cc258f8c9320"},
+    {file = "Django-1.10.tar.gz", hash = "sha256:46b868d68e5fd69dd9e05a0a7900df91786097e30b2aa6f065dd7fa3b22f7005"},
+]
+django-bootstrap3 = [
+    {file = "django-bootstrap3-7.0.1.tar.gz", hash = "sha256:bd0a97b70882175fe02b6afdb254d3429f9948072c5cca4945af79792dbf1f6d"},
+]
+django-braces = [
+    {file = "django-braces-1.10.0.macosx-10.11-x86_64.tar.gz", hash = "sha256:94af56f0206c71c1c71af5a79b4bf76b24f0347283e7876bafc8ac948056b6d1"},
+    {file = "django-braces-1.10.0.tar.gz", hash = "sha256:2f408af031e665c03a7cd3d49450d670424487cc8f22ebd67b2ba7327259aac7"},
+    {file = "django_braces-1.10.0-py2.py3-none-any.whl", hash = "sha256:6d0854f24d5bec8e21f7312f4515e17ff0b0b0510c54ecbdbd6aff22fb8980f5"},
+]
+django-filer = [
+    {file = "django-filer-0.8.7.tar.gz", hash = "sha256:3394972b491105c43c1c016b9f16081d5f6175f2bdc5a4d806a1217dc91a78da"},
+]
+django-js-asset = [
+    {file = "django-js-asset-1.1.0.tar.gz", hash = "sha256:30149158206f693a5d027fe590096fc84495486bd11cd77d395b4f2ec27fc1d0"},
+    {file = "django_js_asset-1.1.0-py2.py3-none-any.whl", hash = "sha256:a395d8d19eb201ea8d2bd4f145b38f1717cd74c0f609f040141d8724c5a27f36"},
+]
+django-mptt = [
+    {file = "django-mptt-0.9.0.tar.gz", hash = "sha256:feef466f9ba6849d2f1581c94d8550d5554945a8d05a2660da19193140cd8a35"},
+    {file = "django_mptt-0.9.0-py2.py3-none-any.whl", hash = "sha256:6aaa0268c0d994d77dda501b64257b5d6f1e170fcdfe2f0674f80861dc30c0f4"},
+]
+django-oauth-toolkit = [
+    {file = "django-oauth-toolkit-0.11.0.tar.gz", hash = "sha256:6feb9321cd49dd814dd1dcd6af6072dd15fed9308970083ce7e3a410f84f7d56"},
+    {file = "django_oauth_toolkit-0.11.0-py2.py3-none-any.whl", hash = "sha256:0f278733e14ed8e0672b5e694d50fb4905155f682a060f3259395a7506e07551"},
+]
+django-polymorphic = [
+    {file = "django_polymorphic-0.5.5.tar.gz", hash = "sha256:5c137c8307bf4520b5f4ee85d66844c18cc002800b554c4b794b67924297a45d"},
+]
+django-rest-framework-social-oauth2 = [
+    {file = "django-rest-framework-social-oauth2-1.0.5.tar.gz", hash = "sha256:d1efc9dd9beaae130ac66c61f66925bf0d1996db11c18affac5ec8a0988634f7"},
+]
+djangorestframework = [
+    {file = "djangorestframework-3.4.3-py2.py3-none-any.whl", hash = "sha256:6d91729b959441168953cdfba05cc28aafbad3ef553fbcc4a876348d8ffeaa78"},
+    {file = "djangorestframework-3.4.3.tar.gz", hash = "sha256:3a73e09e06eb18b305015f327a27a80cbf91680b3820e7693b968931e0c64e9d"},
+]
+easy-thumbnails = [
+    {file = "easy-thumbnails-2.5.tar.gz", hash = "sha256:e244d1f26027fc32c6ca60ffb0169a39099446f614b0433e907a2588ae7d9b95"},
+]
+gunicorn = [
+    {file = "gunicorn-19.6.0-py2.py3-none-any.whl", hash = "sha256:723234ea1fa8dff370ab69830ba8bc37469a7cba13fd66055faeef24085e6530"},
+    {file = "gunicorn-19.6.0.tar.gz", hash = "sha256:813f6916d18a4c8e90efde72f419308b357692f81333cb1125f80013d22fb618"},
+]
+idna = [
+    {file = "idna-2.5-py2.py3-none-any.whl", hash = "sha256:cc19709fd6d0cbfed39ea875d29ba6d4e22c0cebc510a76d6302a28385e8bb70"},
+    {file = "idna-2.5.tar.gz", hash = "sha256:3cb5ce08046c4e3a560fc02f138d0ac63e00f8ce5901a56b32ec8b7994082aab"},
+]
+oauthlib = [
+    {file = "oauthlib-1.1.2.tar.gz", hash = "sha256:0e83e91d9e77a396dc178eddba0c4abf75e465761804bfcdb20b977284bcb0bb"},
+]
+olefile = [
+    {file = "olefile-0.44.zip", hash = "sha256:61f2ca0cd0aa77279eb943c07f607438edf374096b66332fae1ee64a6f0f73ad"},
+]
+pillow = [
+    {file = "Pillow-7.0.0-cp35-cp35m-macosx_10_6_intel.whl", hash = "sha256:5f3546ceb08089cedb9e8ff7e3f6a7042bb5b37c2a95d392fb027c3e53a2da00"},
+    {file = "Pillow-7.0.0-cp35-cp35m-manylinux1_i686.whl", hash = "sha256:9d2ba4ed13af381233e2d810ff3bab84ef9f18430a9b336ab69eaf3cd24299ff"},
+    {file = "Pillow-7.0.0-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:ff3797f2f16bf9d17d53257612da84dd0758db33935777149b3334c01ff68865"},
+    {file = "Pillow-7.0.0-cp35-cp35m-win32.whl", hash = "sha256:c18f70dc27cc5d236f10e7834236aff60aadc71346a5bc1f4f83a4b3abee6386"},
+    {file = "Pillow-7.0.0-cp35-cp35m-win_amd64.whl", hash = "sha256:875358310ed7abd5320f21dd97351d62de4929b0426cdb1eaa904b64ac36b435"},
+    {file = "Pillow-7.0.0-cp36-cp36m-macosx_10_6_intel.whl", hash = "sha256:ab76e5580b0ed647a8d8d2d2daee170e8e9f8aad225ede314f684e297e3643c2"},
+    {file = "Pillow-7.0.0-cp36-cp36m-manylinux1_i686.whl", hash = "sha256:a62ec5e13e227399be73303ff301f2865bf68657d15ea50b038d25fc41097317"},
+    {file = "Pillow-7.0.0-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:8ac6ce7ff3892e5deaab7abaec763538ffd011f74dc1801d93d3c5fc541feee2"},
+    {file = "Pillow-7.0.0-cp36-cp36m-win32.whl", hash = "sha256:91b710e3353aea6fc758cdb7136d9bbdcb26b53cefe43e2cba953ac3ee1d3313"},
+    {file = "Pillow-7.0.0-cp36-cp36m-win_amd64.whl", hash = "sha256:bf598d2e37cf8edb1a2f26ed3fb255191f5232badea4003c16301cb94ac5bdd0"},
+    {file = "Pillow-7.0.0-cp37-cp37m-macosx_10_6_intel.whl", hash = "sha256:5bfef0b1cdde9f33881c913af14e43db69815c7e8df429ceda4c70a5e529210f"},
+    {file = "Pillow-7.0.0-cp37-cp37m-manylinux1_i686.whl", hash = "sha256:dc058b7833184970d1248135b8b0ab702e6daa833be14035179f2acb78ff5636"},
+    {file = "Pillow-7.0.0-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:c5ed816632204a2fc9486d784d8e0d0ae754347aba99c811458d69fcdfd2a2f9"},
+    {file = "Pillow-7.0.0-cp37-cp37m-win32.whl", hash = "sha256:54ebae163e8412aff0b9df1e88adab65788f5f5b58e625dc5c7f51eaf14a6837"},
+    {file = "Pillow-7.0.0-cp37-cp37m-win_amd64.whl", hash = "sha256:87269cc6ce1e3dee11f23fa515e4249ae678dbbe2704598a51cee76c52e19cda"},
+    {file = "Pillow-7.0.0-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:0a628977ac2e01ca96aaae247ec2bd38e729631ddf2221b4b715446fd45505be"},
+    {file = "Pillow-7.0.0-cp38-cp38-manylinux1_i686.whl", hash = "sha256:62a889aeb0a79e50ecf5af272e9e3c164148f4bd9636cc6bcfa182a52c8b0533"},
+    {file = "Pillow-7.0.0-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:bf4003aa538af3f4205c5fac56eacaa67a6dd81e454ffd9e9f055fff9f1bc614"},
+    {file = "Pillow-7.0.0-cp38-cp38-win32.whl", hash = "sha256:7406f5a9b2fd966e79e6abdaf700585a4522e98d6559ce37fc52e5c955fade0a"},
+    {file = "Pillow-7.0.0-cp38-cp38-win_amd64.whl", hash = "sha256:5f7ae9126d16194f114435ebb79cc536b5682002a4fa57fa7bb2cbcde65f2f4d"},
+    {file = "Pillow-7.0.0-pp373-pypy36_pp73-win32.whl", hash = "sha256:8453f914f4e5a3d828281a6628cf517832abfa13ff50679a4848926dac7c0358"},
+    {file = "Pillow-7.0.0.tar.gz", hash = "sha256:4d9ed9a64095e031435af120d3c910148067087541131e82b3e8db302f4c8946"},
+]
+psycopg2 = [
+    {file = "psycopg2-2.7.3.2-cp26-cp26m-manylinux1_i686.whl", hash = "sha256:594aa9a095de16614f703d759e10c018bdffeafce2921b8e80a0e8a0ebbc12e5"},
+    {file = "psycopg2-2.7.3.2-cp26-cp26m-manylinux1_x86_64.whl", hash = "sha256:1cf5d84290c771eeecb734abe2c6c3120e9837eb12f99474141a862b9061ac51"},
+    {file = "psycopg2-2.7.3.2-cp26-cp26mu-manylinux1_i686.whl", hash = "sha256:0344b181e1aea37a58c218ccb0f0f771295de9aa25a625ed076e6996c6530f9e"},
+    {file = "psycopg2-2.7.3.2-cp26-cp26mu-manylinux1_x86_64.whl", hash = "sha256:25250867a4cd1510fb755ef9cb38da3065def999d8e92c44e49a39b9b76bc893"},
+    {file = "psycopg2-2.7.3.2-cp27-cp27m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl", hash = "sha256:317612d5d0ca4a9f7e42afb2add69b10be360784d21ce4ecfbca19f1f5eadf43"},
+    {file = "psycopg2-2.7.3.2-cp27-cp27m-manylinux1_i686.whl", hash = "sha256:9d6266348b15b4a48623bf4d3e50445d8e581da413644f365805b321703d0fac"},
+    {file = "psycopg2-2.7.3.2-cp27-cp27m-manylinux1_x86_64.whl", hash = "sha256:ddca39cc55877653b5fcf59976d073e3d58c7c406ef54ae8e61ddf8782867182"},
+    {file = "psycopg2-2.7.3.2-cp27-cp27m-win32.whl", hash = "sha256:7a75565181e75ba0b9fb174b58172bf6ea9b4331631cfe7bafff03f3641f5d73"},
+    {file = "psycopg2-2.7.3.2-cp27-cp27m-win_amd64.whl", hash = "sha256:94e4128ba1ea56f02522fffac65520091a9de3f5c00da31539e085e13db4771b"},
+    {file = "psycopg2-2.7.3.2-cp27-cp27mu-manylinux1_i686.whl", hash = "sha256:988d2ec7560d42ef0ac34b3b97aad14c4f068792f00e1524fa1d3749fe4e4b64"},
+    {file = "psycopg2-2.7.3.2-cp27-cp27mu-manylinux1_x86_64.whl", hash = "sha256:7a9c6c62e6e05df5406e9b5235c31c376a22620ef26715a663cee57083b3c2ea"},
+    {file = "psycopg2-2.7.3.2-cp33-cp33m-manylinux1_i686.whl", hash = "sha256:92179bd68c2efe72924a99b6745a9172471931fc296f9bfdf9645b75eebd6344"},
+    {file = "psycopg2-2.7.3.2-cp33-cp33m-manylinux1_x86_64.whl", hash = "sha256:b9358e203168fef7bfe9f430afaed3a2a624717a1d19c7afa7dfcbd76e3cd95c"},
+    {file = "psycopg2-2.7.3.2-cp33-cp33m-win32.whl", hash = "sha256:009e0bc09a57dbef4b601cb8b46a2abad51f5274c8be4bba276ff2884cd4cc53"},
+    {file = "psycopg2-2.7.3.2-cp33-cp33m-win_amd64.whl", hash = "sha256:d3ac07240e2304181ffdb13c099840b5eb555efc7be9344503c0c03aa681de79"},
+    {file = "psycopg2-2.7.3.2-cp34-cp34m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl", hash = "sha256:40fa5630cd7d237cd93c4d4b64b9e5ed9273d1cfce55241c7f9066f5db70629d"},
+    {file = "psycopg2-2.7.3.2-cp34-cp34m-manylinux1_i686.whl", hash = "sha256:6c2f1a76a9ebd9ecf7825b9e20860139ca502c2bf1beabf6accf6c9e66a7e0c3"},
+    {file = "psycopg2-2.7.3.2-cp34-cp34m-manylinux1_x86_64.whl", hash = "sha256:37f54452c7787dbdc0a634ca9773362b91709917f0b365ed14b831f03cbd34ba"},
+    {file = "psycopg2-2.7.3.2-cp34-cp34m-win32.whl", hash = "sha256:8f5942a4daf1ffac42109dc4a72f786af4baa4fa702ede1d7c57b4b696c2e7d6"},
+    {file = "psycopg2-2.7.3.2-cp34-cp34m-win_amd64.whl", hash = "sha256:bf708455cd1e9fa96c05126e89a0c59b200d086c7df7bbafc7d9be769e4149a3"},
+    {file = "psycopg2-2.7.3.2-cp35-cp35m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl", hash = "sha256:82c40ea3ac1555e0462803380609fbe8b26f52620f3d4f8eb480cfd8ceed8a14"},
+    {file = "psycopg2-2.7.3.2-cp35-cp35m-manylinux1_i686.whl", hash = "sha256:207ba4f9125a0a4200691e82d5eee7ea1485708eabe99a07fc7f08696fae62f4"},
+    {file = "psycopg2-2.7.3.2-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:0cd4c848f0e9d805d531e44973c8f48962e20eb7fc0edac3db4f9dbf9ed5ab82"},
+    {file = "psycopg2-2.7.3.2-cp35-cp35m-win32.whl", hash = "sha256:57baf63aeb2965ca4b52613ce78e968b6d2bde700c97f6a7e8c6c236b51ab83e"},
+    {file = "psycopg2-2.7.3.2-cp35-cp35m-win_amd64.whl", hash = "sha256:2954557393cfc9a5c11a5199c7a78cd9c0c793a047552d27b1636da50d013916"},
+    {file = "psycopg2-2.7.3.2-cp36-cp36m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl", hash = "sha256:7c31dade89634807196a6b20ced831fbd5bec8a21c4e458ea950c9102c3aa96f"},
+    {file = "psycopg2-2.7.3.2-cp36-cp36m-manylinux1_i686.whl", hash = "sha256:1286dd16d0e46d59fa54582725986704a7a3f3d9aca6c5902a7eceb10c60cb7e"},
+    {file = "psycopg2-2.7.3.2-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:697ff63bc5451e0b0db48ad205151123d25683b3754198be7ab5fcb44334e519"},
+    {file = "psycopg2-2.7.3.2-cp36-cp36m-win32.whl", hash = "sha256:fc993c9331d91766d54757bbc70231e29d5ceb2d1ac08b1570feaa0c38ab9582"},
+    {file = "psycopg2-2.7.3.2-cp36-cp36m-win_amd64.whl", hash = "sha256:9d64fed2681552ed642e9c0cc831a9e95ab91de72b47d0cb68b5bf506ba88647"},
+    {file = "psycopg2-2.7.3.2.tar.gz", hash = "sha256:5c3213be557d0468f9df8fe2487eaf2990d9799202c5ff5cb8d394d09fad9b2a"},
+]
+pyjwt = [
+    {file = "PyJWT-1.5.0-py2.py3-none-any.whl", hash = "sha256:ad60a3fb9b393667864ed4b8abc9c3b570747f80bf77a113ead2fbaf0f0cedf3"},
+    {file = "PyJWT-1.5.0.tar.gz", hash = "sha256:fd182b728d13f04c289d9b2623d09256d356c9b4a6778018001454a954d7c54b"},
+]
+python-social-auth = [
+    {file = "python-social-auth-0.3.6.tar.gz", hash = "sha256:6986220df76934aee15c54938a13ebe370a1976e043af01fa3bea417f6722e74"},
+    {file = "python_social_auth-0.3.6-py2-none-any.whl", hash = "sha256:9aaad6f7bf83fd129620eadaab1e78e63200da61a5d8898fd1aa243686b36575"},
+    {file = "python_social_auth-0.3.6-py3-none-any.whl", hash = "sha256:8aac8531f7dd4d1b9af606654532fef4f615cb437774a7a1f8dcdebe89c17664"},
+]
+python3-openid = [
+    {file = "python3-openid-3.1.0.tar.gz", hash = "sha256:628d365d687e12da12d02c6691170f4451db28d6d68d050007e4a40065868502"},
+    {file = "python3_openid-3.1.0-py3-none-any.whl", hash = "sha256:0086da6b6ef3161cfe50fb1ee5cceaf2cda1700019fda03c2c5c440ca6abe4fa"},
+]
+pytz = [
+    {file = "pytz-2016.6.1-py2.4.egg", hash = "sha256:97baa64915ef83b98d202ee2d4dbcc891b924b83410e69078523215fa2c72d0a"},
+    {file = "pytz-2016.6.1-py2.5.egg", hash = "sha256:3495f56248eac90e59a1e742d13e2ce647eea46aadf453d0fa22b7eb3d665670"},
+    {file = "pytz-2016.6.1-py2.6.egg", hash = "sha256:5cf3ed40944662a351b2cca0c5bb0c003e0a1b2c4d808e45fad73abf80f44b48"},
+    {file = "pytz-2016.6.1-py2.7.egg", hash = "sha256:dec0bedfa2a91289e2505e4f771dbcb6a3930b6664e6a6ac010cd73f555900ba"},
+    {file = "pytz-2016.6.1-py2.py3-none-any.whl", hash = "sha256:7833bf559800232d3965b70e69642ebdadc76f7988f8d0a1440e072193ecd949"},
+    {file = "pytz-2016.6.1-py3.1.egg", hash = "sha256:2f5fa04d1804ff0cd52ca3274ba9e74c775b4b70a18f25fcc537c903dfd5cc18"},
+    {file = "pytz-2016.6.1-py3.2.egg", hash = "sha256:a44a3486a6657046879406dfd9ef0565b1211ffcf4779bddbe39c72496df1688"},
+    {file = "pytz-2016.6.1-py3.3.egg", hash = "sha256:2298d266b831852d0a7ef7e17c57c09a0320d187b3f1c85e58903fb6088d268d"},
+    {file = "pytz-2016.6.1-py3.4.egg", hash = "sha256:060cf9f8770765a7d0be9e0b3e512ab54bc346a15daa50d6c9dd59347a396d3a"},
+    {file = "pytz-2016.6.1-py3.5.egg", hash = "sha256:1cc1fdda22d183ed6e6c9f65ecbba8e12a9208cfadd384d2d429e18dc0250a0f"},
+    {file = "pytz-2016.6.1.tar.bz2", hash = "sha256:b5aff44126cf828537581e534cc94299b223b945a2bb3b5434d37bf8c7f3a10c"},
+    {file = "pytz-2016.6.1.tar.gz", hash = "sha256:6f57732f0f8849817e9853eb9d50d85d1ebb1404f702dbc44ee627c642a486ca"},
+    {file = "pytz-2016.6.1.zip", hash = "sha256:51ad716f6081f2126deb436349924e069dfcd0cbd9e0cabdacb0b3a72a3b82e7"},
+]
+requests = [
+    {file = "requests-2.17.3-py2.py3-none-any.whl", hash = "sha256:baf701b4a9d4cbe40169e8ab77816f7abadbad502ba459c30f7a2bc138e4d612"},
+    {file = "requests-2.17.3.tar.gz", hash = "sha256:8d29f97ed1541709b57caddb77bb20592411d7ca10ec4f03275f49ee8456e225"},
+]
+requests-oauthlib = [
+    {file = "requests-oauthlib-0.8.0.tar.gz", hash = "sha256:883ac416757eada6d3d07054ec7092ac21c7f35cb1d2cf82faf205637081f468"},
+    {file = "requests_oauthlib-0.8.0-py2.py3-none-any.whl", hash = "sha256:50a8ae2ce8273e384895972b56193c7409601a66d4975774c60c2aed869639ca"},
+]
+shortuuid = [
+    {file = "shortuuid-0.5.0.tar.gz", hash = "sha256:d08fd398f40f8baf87e15eef8355e92fa541bca4eb8465fefab7ee22f92711b9"},
+]
+six = [
+    {file = "six-1.10.0-py2.py3-none-any.whl", hash = "sha256:0ff78c403d9bccf5a425a6d31a12aa6b47f1c21ca4dc2573a7e2f32a97335eb1"},
+    {file = "six-1.10.0.tar.gz", hash = "sha256:105f8d68616f8248e24bf0e9372ef04d3cc10104f1980f54d57b2ce73a5ad56a"},
+]
+social-auth-app-django = [
+    {file = "social-auth-app-django-1.1.0.tar.gz", hash = "sha256:1bf6f83929f1295f11304201541df9804df8ba87a6abc3f171874b1e4cbf9d1b"},
+    {file = "social_auth_app_django-1.1.0-py2-none-any.whl", hash = "sha256:a1d2840fd764b6542b88f61a34b4dd80376adcc00bfb906bebef812aa2950e2a"},
+    {file = "social_auth_app_django-1.1.0-py3-none-any.whl", hash = "sha256:90e4835ddce1dea977f3f5c6e4f6d717f12888c13ad1c754b857d637ba4141da"},
+]
+social-auth-core = [
+    {file = "social-auth-core-1.7.0.tar.gz", hash = "sha256:7b393754ab75f6e5176568554f4f7b5cd9e4cb6dab23d9614e5c9e1425f3fcf9"},
+    {file = "social_auth_core-1.7.0-py2-none-any.whl", hash = "sha256:eb0d0e29d0cfa729cd52437314d4aeb83806c4d6e7824cbe988195b6a4b85163"},
+    {file = "social_auth_core-1.7.0-py3-none-any.whl", hash = "sha256:273eb5bbeded3cfc178ca7e14f0641165df03133a2f787a6e412f782489d56ba"},
+]
+stripe = [
+    {file = "stripe-1.37.0-py2-none-any.whl", hash = "sha256:e90bc4c624053c591da5ed72a3bddfe03cb11bcaa6f952057e425ccf5fe80ba0"},
+    {file = "stripe-1.37.0-py3-none-any.whl", hash = "sha256:c95a038e2c1bd8fd33ebf92bc1c51009971b60b84966649589e175410dcfa7f6"},
+    {file = "stripe-1.37.0.tar.gz", hash = "sha256:ac2dfe25fc11ad08bb40ad2391b90882559f375a0506566d31af784a8208528a"},
+]
+urllib3 = [
+    {file = "urllib3-1.21.1-py2.py3-none-any.whl", hash = "sha256:8ed6d5c1ff9d6ba84677310060d6a3a78ca3072ce0684cb3c645023009c114b1"},
+    {file = "urllib3-1.21.1.tar.gz", hash = "sha256:b14486978518ca0901a76ba973d7821047409d7f726f22156b24e83fd71382a5"},
+]
+whitenoise = [
+    {file = "whitenoise-3.2.1-py2.py3-none-any.whl", hash = "sha256:a875382e670bdd5ab642b26d930463af4509a6de63b52402c23a7216dc382a99"},
+    {file = "whitenoise-3.2.1.tar.gz", hash = "sha256:51d48bd426d3cf64c1ec5082d1f0d5437649d8ae59114a495e7406faae4fcbd2"},
+]

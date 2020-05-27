@@ -1,0 +1,40 @@
+{% extends 'restaurant/base.html' %} {% block page %}
+
+<div class="panel">
+    <div class="panel-heading bg-blue">
+        <h4 class="panel-title text-center text-white">UpSell and Extra</h4>
+    </div>
+    <div class="panel-body">
+        <div class="text-right">
+            <a href="{% url 'restaurant-add-upsellandextra' %}" class="btn btn-pink">Add list</a>
+            <br/>
+            <br/>
+        </div>
+
+        <table class="table table-bordered table-hover table-striped">
+            <thead>
+                <tr class="bg-gray text-white">
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% if upsellandextra %} {% for element in upsellandextra %}
+                <tr>
+                    <td scope="row">{{ element.id }}</td>
+                    <td><a href="{% url 'restaurant-edit-upsellandextra' element.id %}">{{ element.name }}</a></td>
+                    <td>{{ element.price }}</td>
+                </tr>
+                {% endfor %} {% else %}
+                <tr>
+                    <td colspan="6">No Upsell and Extra are available</td>
+                </tr>
+                {% endif %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+{% endblock %}
